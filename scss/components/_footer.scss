@@ -5,11 +5,9 @@
   justify-content: center;
   width: $mobile;
   padding-bottom: 0;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
-@media (min-width: $tablet) {
+@media (width: $tablet) {
   .footer {
     display: flex;
     flex-wrap: wrap;
