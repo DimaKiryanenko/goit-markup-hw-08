@@ -23,7 +23,7 @@ html {
 *::after {
   box-sizing: inherit;
 }
-* body {
+body {
   background-color: #ffffff;
   color: #212121;
   font-family: Roboto, sans-serif;
@@ -33,7 +33,7 @@ html {
   padding-top: 60px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   body {
     padding-top: 80px;
   }

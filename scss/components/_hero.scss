@@ -34,14 +34,8 @@
 
 @media (min-width: $tablet) {
   .overlay {
-    width: $tablet;
-  }
-}
-
-@media (min-width: $desktop) {
-  .overlay {
     justify-content: center;
-    width: 1600px;
+    width: 100%;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -51,6 +45,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .overlay {
+    justify-content: center;
+    width: 1600px;
   }
 }
 

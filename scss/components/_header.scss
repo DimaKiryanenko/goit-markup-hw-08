@@ -9,7 +9,6 @@
 }
 
 .header__main {
-  display: flex;
   min-width: 480px;
 
   align-items: center;
@@ -31,13 +30,6 @@
 @media (min-width: $tablet) {
   .header__main {
     width: $tablet;
-  }
-}
-
-@media (min-width: $desktop) {
-  .header__main {
-    width: 1600px;
-    height: 80px;
   }
 }
 
@@ -71,6 +63,14 @@
   margin-top: 48px;
   margin-left: 40px;
   margin-bottom: 300px;
+}
+
+@media (min-width: $tablet) {
+  .site-nav {
+    display: flex;
+    margin: 0;
+    margin-left: 93px;
+  }
 }
 
 .site-nav__item {
@@ -160,6 +160,7 @@
   fill: currentColor;
   margin-right: 10px;
 }
+
 .contacts__mob {
   width: 10px;
   height: 16px;
@@ -168,6 +169,8 @@
 }
 
 .menu {
+  display: block;
+  z-index: 3;
   margin: 0;
   margin-right: 15px;
   padding: 0;
@@ -194,20 +197,6 @@
 .menu:hover {
   fill: $color-click;
 }
-@media (max-width: 767px) {
-  .site {
-    display: none;
-    position: absolute;
-    justify-items: start;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    background: $color-white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
-      0px 1px 3px rgba(0, 0, 0, 0.16);
-  }
-}
 
 .site.is-open {
   display: block;
@@ -224,19 +213,21 @@
   line-height: 28px;
   letter-spacing: 0.02em;
 }
-.social {
+
+.soci {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
   margin-left: 40px;
 }
-.social-menu {
+
+.soci-menu {
   display: block;
   width: fit-content;
   margin-bottom: 50px;
 }
 
-.social-menu__link {
+.soci-menu__link {
   display: block;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   margin-left: 10px;
@@ -249,25 +240,149 @@
   color: $color-click;
 }
 
-.social-menu__link:nth-child(4n) {
+.soci-menu__link:nth-child(4n) {
   margin-right: 0;
 }
 
-.social-menu__stile {
+.soci-menu__stile {
   border: none;
 }
-.social-menu__margin {
+.soci-menu__margin {
   margin-left: 0;
 }
 @media (max-width: 767px) {
   .hidden {
     display: none;
   }
+
+  .site {
+    display: none;
+    position: absolute;
+    justify-items: start;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: $color-white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+
+  .site-contacts {
+    position: relative;
+    text-align: start;
+  }
 }
 
 @media (min-width: $tablet) {
   .menu,
-  .social {
+  .soci {
     display: none;
+  }
+
+  .header__main {
+    height: 80px;
+  }
+
+  .site {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+  }
+
+  .contacts + .contacts {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .site-contacts {
+    display: inline-block;
+    align-items: center;
+    margin: 0;
+    margin-right: 15px;
+  }
+
+  .site-nav_link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts__item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .contacts__item {
+    display: flex;
+    align-items: center;
+    color: $color-secondary;
+    text-decoration: none;
+  }
+
+  .site-nav {
+    display: flex;
+    margin-left: 93px;
+  }
+
+  .site-nav__item + .site-nav__item {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .header__main {
+    width: 1200px;
+    height: 80px;
+  }
+
+  .site-contacts {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+
+  .contacts {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .contacts + .contacts {
+    margin-left: 30px;
+    margin-top: 0;
+  }
+
+  .contacts__item {
+    display: flex;
+    align-items: center;
+    color: $color-secondary;
+    text-decoration: none;
+  }
+
+  .contacts__conv {
+    width: 16px;
+    height: 12px;
+    fill: currentColor;
+    margin-right: 10px;
+  }
+
+  .contacts__mob {
+    width: 10px;
+    height: 16px;
+    fill: currentColor;
+    margin-right: 10px;
   }
 }
