@@ -1,0 +1,124 @@
+.description-padding {
+  min-width: 480px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: $mobile) {
+  .description-padding {
+    width: $mobile;
+  }
+}
+
+@media (min-width: $tablet) {
+  .description-padding {
+    width: $tablet;
+  }
+}
+
+@media (min-width: $desktop) {
+  .description-padding {
+    width: $desktop;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.description {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.description__list {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: $tablet) {
+  .description__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: main axis;
+  }
+}
+
+.description__features {
+  width: 450px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+@media (min-width: $tablet) {
+  .description__features {
+    display: inline-block;
+    width: 354px;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: flex-start;
+    margin-right: 30px;
+  }
+
+  .description__features:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .description__features:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .description__features {
+    width: 270px;
+    margin: 0;
+  }
+  .description__features + .description__features {
+    margin-left: 30px;
+  }
+}
+
+.description__svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+
+  background-color: $color-bg;
+}
+
+.description__title {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+
+  color: $color-black;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet) {
+  .description__title {
+    text-align: start;
+  }
+}
+
+.description__text {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $color-secondary;
+  width: 100%;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
