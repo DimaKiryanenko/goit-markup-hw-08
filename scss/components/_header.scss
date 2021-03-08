@@ -16,9 +16,6 @@
   margin-left: auto;
   margin-right: auto;
   height: 60px;
-
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 @media (min-width: $mobile) {
@@ -303,7 +300,7 @@
     display: inline-block;
     align-items: center;
     margin: 0;
-    margin-right: 15px;
+    margin-right: 30px;
   }
 
   .site-nav_link {

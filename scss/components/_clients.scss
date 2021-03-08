@@ -2,8 +2,16 @@
   min-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: $tablet) {
+  .clients {
+    width: 100%;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -16,9 +24,6 @@
 .section__clients {
   margin-left: auto;
   margin-right: auto;
-
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 @media (min-width: $mobile) {

@@ -9,6 +9,12 @@
   padding-right: 15px;
 }
 
+@media (min-width: $tablet) {
+  .section {
+    width: 100%;
+  }
+}
+
 @media (min-width: $desktop) {
   .section {
     padding-top: 94px;

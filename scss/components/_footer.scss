@@ -7,7 +7,7 @@
   padding-bottom: 0;
 }
 
-@media (width: $tablet) {
+@media (min-width: $tablet) {
   .footer {
     display: flex;
     flex-wrap: wrap;
@@ -23,7 +23,7 @@
 
 @media (min-width: $tablet) {
   .footer {
-    width: $tablet;
+    width: 738px;
   }
 }
 
@@ -39,6 +39,7 @@
   }
 
   .footer__block {
+    text-align: start;
     margin: 0;
     margin-right: 70px;
   }

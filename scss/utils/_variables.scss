@@ -51,8 +51,11 @@ textarea {
 
 footer {
   background: #2f303a;
+  width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -67,6 +70,7 @@ button {
 }
 
 img {
-  width: 100%;
-  height: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
