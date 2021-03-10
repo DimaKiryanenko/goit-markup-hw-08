@@ -204,7 +204,7 @@
 .checkbox__input:checked + .checkbox__icon {
   border-color: $color-click;
   background-color: $color-click;
-  background-image: url("/image/iconcheck.svg");
+  background-image: url("../image/iconcheck.svg");
   background-size: contain;
   background-origin: border-box;
 }
